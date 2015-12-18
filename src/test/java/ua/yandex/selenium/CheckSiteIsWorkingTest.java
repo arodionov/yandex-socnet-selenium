@@ -29,7 +29,7 @@ public class CheckSiteIsWorkingTest {
     driver.findElement(By.name("user")).clear();
     driver.findElement(By.name("user")).sendKeys("Andrii");
     driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
-    assertEquals("Hello Luba", driver.findElement(By.cssSelector("h1")).getText());
+    assertEquals("Hello Andrii", driver.findElement(By.cssSelector("h1")).getText());
   }
 
   @After
