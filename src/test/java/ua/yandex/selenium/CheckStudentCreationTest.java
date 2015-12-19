@@ -23,6 +23,7 @@ public class CheckStudentCreationTest {
   }
 
   @Test
+  @Ignore
   public void test2() throws Exception {
     driver.get(baseUrl + "/SocNet/");
     driver.findElement(By.linkText("View All")).click();
