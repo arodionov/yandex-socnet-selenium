@@ -14,10 +14,10 @@ import org.junit.BeforeClass;
 public abstract class TestSetup {
     
     protected static String appURL;
-    private static String baseUrl = "http://localhost:8084";
 
     @BeforeClass
     public static void setUpTest() {
+        String baseUrl = System.getProperty("baseUrl", "http://localhost:8181");
         String appName = System.getProperty("appName", "SocNet");
         //System.out.println(appName);
         appURL = baseUrl + "/" + appName + "/";
