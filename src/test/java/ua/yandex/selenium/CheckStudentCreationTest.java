@@ -20,7 +20,7 @@ public class CheckStudentCreationTest extends TestSetup {
   }
 
   @Test
-  //@Ignore
+  @Ignore
   public void test2() throws Exception {
     driver.get(appURL);
     driver.findElement(By.linkText("View All")).click();
