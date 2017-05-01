@@ -17,6 +17,8 @@ public abstract class TestSetup {
 
     @BeforeClass
     public static void setUpTest() {
+        System.setProperty("webdriver.chrome.driver", "D:\\tmp\\chromedriver.exe");
+
         String baseUrl = System.getProperty("baseUrl", "http://localhost:8181");
         String appName = System.getProperty("appName", "SocNet");
         //System.out.println(appName);

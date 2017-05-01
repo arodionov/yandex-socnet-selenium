@@ -5,7 +5,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CheckStudentCreationTest extends TestSetup {
   private WebDriver driver;
@@ -15,12 +15,12 @@ public class CheckStudentCreationTest extends TestSetup {
 
   @Before
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();    
+    driver = new ChromeDriver();    
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
-  @Ignore
+  //@Ignore
   public void test2() throws Exception {
     driver.get(appURL);
     driver.findElement(By.linkText("View All")).click();
